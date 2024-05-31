@@ -1,0 +1,12 @@
+<body>
+  <h1>Is buss://dingle.it Up?</h1>
+  <h2 id="wowzers">Checking...</h2>
+  <script>
+  let res = fetch("http://search.buss.lol/search")
+  if (res.status == 200){
+    document.getElementById("wowzers").innerHTML = "YES :D"
+  }else{
+     document.getElementById("wowzers").innerHTML = "NO :("
+  }
+</script>
+</body>
